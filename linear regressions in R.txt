@@ -1,0 +1,21 @@
+# load the csv file with features, flag combinations and performances
+
+main <-read.table(file.choose(),header=T,sep=",") 
+
+# list of headers
+
+names(main) 
+
+# function to calculate p-value of a linear regression
+
+lmp <- function (modelobject) {
+    if (class(modelobject) != "lm") stop("Not an object of class 'lm' ")
+    f <- summary(modelobject)$fstatistic
+    p <- pf(f[1],f[2],f[3],lower.tail=F)
+    attributes(p) <- NULL
+    return(p)
+}
+
+# linear regression with every combination of feature and flag; function ranges may need to be changed
+
+lapply(1:36, function(y) lapply(37:449, function(x) {l <- lm(performance ~ main[,y] + main[,x], data = main); sink("C:/Users/Carlos/Desktop/a.txt", append=T); cat(paste(names(main[y]),names(main[x]),summary(l)$coefficients[1,1],summary(l)$coefficients[2,1],summary(l)$coefficients[3,1],lmp(l),sep=", ")); cat("\n"); sink() }))

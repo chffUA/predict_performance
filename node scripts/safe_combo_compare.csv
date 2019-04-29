@@ -1,0 +1,31 @@
+file, best, average, actual
+DSP_autocor_c.c, 7641, 10777.39, 7652
+DSP_blk_eswap16_c.c, 3812, 5278.52, 3812, <----- !!!
+DSP_blk_eswap32_c.c, 3923, 4849.05, 3923, <----- !!!
+DSP_blk_eswap64_c.c, 3991, 4733.57, 4237
+DSP_blk_move_c.c, 799, 1101.35, 799, <----- !!!
+DSP_dotprod_c.c, 637, 804.74, 638
+DSP_dotp_sqr_c.c, 2074, 2606.65, 2305
+DSP_firlms2_c.c, 960, 1298.75, 960, <----- !!!
+DSP_fir_cplx_c.c, 10261, 10542.65, 10443
+DSP_fltoq15_c.c, 6428, 6971.59, 6710
+DSP_mat_mul_c.c, 46655, 55655.26, 49512
+DSP_mat_trans_c.c, 12711, 18005.48, 12711, <----- !!!
+DSP_maxidx_c.c, 741, 1490.15, 741, <----- !!!
+DSP_maxval_c.c, 842, 1025.83, 856
+DSP_minerror_c.c, 24067, 26792.51, 26499
+DSP_minval_c.c, 838, 1027.82, 853
+DSP_mul32_c.c, 9706, 10908.68, 9706, <----- !!!
+DSP_neg32_c.c, 3102, 5010.93, 3103
+DSP_q15tofl_c.c, 7817, 8146.97, 8198
+DSP_vecsumsq_c.c, 2499, 3520.01, 2500
+DSP_w_vec_c.c, 5270, 8042.31, 5270, <----- !!!
+IMG_quantize_c.c, 2204, 3068.79, 2229
+IMG_sad_16x16_c.c, 3006, 6432.05, 5471
+IMG_sad_8x8_c.c, 934, 1860.26, 1644
+IMG_sobel_c.c, 15295, 29511.37, 15972
+IMG_wave_horz_c.c, 581744, 598251.06, 582037
+IMG_wave_vert_c.c, 6346, 10899.48, 7025
+IMG_ycbcr422p_rgb565_c.c, 4501, 6506.37, 4709
+IMG_yc_demux_be16_c.c, 774, 885.97, 774, <----- !!!
+IMG_yc_demux_le16_c.c, 765, 874.55, 765, <----- !!!
